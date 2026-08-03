@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <rect width="800" height="500" rx="36" fill="#fcf7ff"/>
+  <rect x="220" y="120" width="220" height="260" rx="24" fill="#ffffff" stroke="#7c3aed" stroke-width="8"/>
+  <path d="M250 170c30-24 70-24 100 0v170c-30 24-70 24-100 0z" fill="#f5e8ff" stroke="#7c3aed" stroke-width="8"/>
+  <path d="M360 170c30-24 70-24 100 0v170c-30 24-70 24-100 0z" fill="#ede9fe" stroke="#7c3aed" stroke-width="8"/>
+  <path d="M300 220h100" stroke="#7c3aed" stroke-width="10" stroke-linecap="round"/>
+  <path d="M300 260h80" stroke="#7c3aed" stroke-width="10" stroke-linecap="round"/>
+  <path d="M525 200c24-40 72-58 112-40" stroke="#a855f7" stroke-width="12" fill="none" stroke-linecap="round"/>
+  <path d="M530 295c20 40 62 60 108 44" stroke="#4338ca" stroke-width="12" fill="none" stroke-linecap="round"/>
+  <text x="220" y="430" font-size="34" font-family="Segoe UI, Arial, sans-serif" fill="#7c3aed">Literature</text>
+</svg>

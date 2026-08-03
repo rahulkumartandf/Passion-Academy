@@ -1,9 +1,17 @@
 /* fonts import */
 @import url("../fonts/octin_sports_rg.ttf");
+:root {
+  --primary: #0f4c5c;
+  --primary-dark: #0a3442;
+  --accent: #ff7f3f;
+  --accent-soft: #fff2e8;
+  --text: #15313b;
+  --muted: #5e6f76;
+}
 body {
   font-family: "Poppins", sans-serif;
-  color: #0c0c0c;
-  background-color: #ffffff;
+  color: var(--text);
+  background: linear-gradient(180deg, #f7fbfc 0%, #ffffff 100%);
   overflow-x: hidden;
 }
 
@@ -80,7 +88,8 @@ body {
 }
 
 .header_section {
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.96);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
 }
 
 .header_section .container-fluid {
@@ -118,8 +127,61 @@ body {
 }
 
 .header_section .social_box a:hover {
-  color: #be2623;
-  border-color: #be2623;
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.navbar-brand {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 12px;
+}
+
+.navbar-brand .brand-mark {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: 700;
+  box-shadow: 0 8px 20px rgba(15, 76, 92, 0.2);
+}
+
+.navbar-brand .brand-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  line-height: 1.05;
+}
+
+.navbar-brand .brand-text strong {
+  font-size: 1rem;
+  letter-spacing: 0.06em;
+  color: var(--primary-dark);
+}
+
+.navbar-brand .brand-text span {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  color: var(--muted);
 }
 
 .custom_nav-container {
@@ -136,10 +198,18 @@ body {
 
 .custom_nav-container .navbar-nav .nav-item .nav-link {
   padding: 3px 15px;
-  margin: 10px 15px;
-  color: #272727;
+  margin: 10px 12px;
+  color: var(--text);
   text-align: center;
   text-transform: uppercase;
+  font-weight: 500;
+  border-radius: 999px;
+  transition: all 0.2s ease;
+}
+
+.custom_nav-container .navbar-nav .nav-item .nav-link:hover {
+  color: var(--accent);
+  background-color: var(--accent-soft);
 }
 
 a,
@@ -311,17 +381,19 @@ a:focus {
 .slider_section .detail-box a {
   display: inline-block;
   padding: 10px 45px;
-  background-color: #be2623;
+  background-color: var(--accent);
   color: #ffffff;
-  border-radius: 5px;
-  border: 1px solid #be2623;
+  border-radius: 999px;
+  border: 1px solid var(--accent);
   -webkit-transition: all .2s;
   transition: all .2s;
 }
 
 .slider_section .detail-box a:hover {
   background-color: transparent;
-  color: #be2623;
+  color: var(--accent);
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
 }
 
 .slider_section .img-box img {
@@ -406,6 +478,16 @@ a:focus {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+  padding: 25px 20px;
+  background-color: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 8px 24px rgba(21, 49, 59, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.asan_section .box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 32px rgba(21, 49, 59, 0.12);
 }
 
 .asan_section .box .img-box {
@@ -527,6 +609,350 @@ a:focus {
   margin: 0;
 }
 
+.section_subtitle {
+  color: #5c6b72;
+  font-size: 1.02rem;
+  margin-top: 8px;
+}
+
+.section_badge {
+  display: inline-block;
+  padding: 7px 13px;
+  border-radius: 999px;
+  background: rgba(255, 127, 63, 0.16);
+  color: var(--accent);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+.highlight_banner {
+  background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 55%, #1f6b7d 100%);
+  border-radius: 26px;
+  padding: 40px;
+  color: #ffffff;
+  box-shadow: 0 18px 45px rgba(15, 76, 92, 0.2);
+  overflow: hidden;
+  position: relative;
+}
+
+.highlight_banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at top right, rgba(255,255,255,0.16), transparent 35%);
+  pointer-events: none;
+}
+
+.highlight_content {
+  position: relative;
+  z-index: 1;
+}
+
+.highlight_content h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.highlight_content p {
+  color: rgba(255,255,255,0.9);
+  max-width: 620px;
+}
+
+.stat_row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 16px;
+  margin-top: 24px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.stat_item {
+  min-width: 125px;
+  padding: 12px 14px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.stat_item strong {
+  display: block;
+  font-size: 1.2rem;
+  margin-bottom: 4px;
+}
+
+.stat_item span {
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.84);
+}
+
+.feature_cards {
+  display: grid;
+  gap: 14px;
+  position: relative;
+  z-index: 1;
+}
+
+.feature_card {
+  background: rgba(255, 255, 255, 0.96);
+  color: var(--text);
+  padding: 18px 20px;
+  border-radius: 16px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+  animation: fadeUp 0.7s ease both;
+}
+
+.feature_card:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.feature_card:nth-child(3) {
+  animation-delay: 0.2s;
+}
+
+.feature_card i {
+  font-size: 1.2rem;
+  color: var(--accent);
+  margin-bottom: 8px;
+}
+
+.feature_card h5 {
+  margin-bottom: 6px;
+  font-weight: 700;
+}
+
+.feature_card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.hero_badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 14px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.16);
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  color: #ffffff;
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.hero_actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 12px;
+  margin-top: 22px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.hero_actions a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  border-radius: 999px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.hero_actions a:hover {
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
+}
+
+.hero_actions .btn_secondary {
+  background: transparent;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+@media (max-width: 991px) {
+  .custom_nav-container .navbar-collapse {
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(15, 76, 92, 0.08);
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.sports_hero_section {
+  background: linear-gradient(120deg, rgba(15, 76, 92, 0.98), rgba(255, 127, 63, 0.94));
+  color: #ffffff;
+  border-radius: 0 0 26px 26px;
+}
+
+.sports_hero_content h2 {
+  font-size: 2.3rem;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.sports_hero_content p {
+  color: rgba(255, 255, 255, 0.92);
+  max-width: 600px;
+}
+
+.sports_card {
+  background: rgba(255, 255, 255, 0.96);
+  color: var(--text);
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.16);
+}
+
+.sports_card h4 {
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.sports_card ul {
+  padding-left: 18px;
+  margin: 0;
+}
+
+.sports_card li {
+  margin-bottom: 8px;
+}
+
+.sports_box {
+  min-height: 220px;
+}
+
+.sport_icon {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background: var(--accent-soft);
+  color: var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+  font-size: 1.25rem;
+}
+
+.sports_program_section {
+  background: #f7fbfc;
+}
+
+.sports_schedule {
+  display: grid;
+  gap: 14px;
+}
+
+.schedule_item {
+  background: #ffffff;
+  border-left: 4px solid var(--accent);
+  border-radius: 12px;
+  padding: 18px 20px;
+  box-shadow: 0 8px 24px rgba(15, 76, 92, 0.06);
+}
+
+.schedule_item h5 {
+  margin-bottom: 6px;
+  font-weight: 700;
+}
+
+.schedule_item p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.sports_highlight,
+.sports_stats {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 0 8px 24px rgba(15, 76, 92, 0.08);
+}
+
+.sports_highlight ul {
+  padding-left: 20px;
+  color: var(--muted);
+}
+
+.sports_stats {
+  display: grid;
+  gap: 12px;
+}
+
+.stat_box {
+  padding: 14px 16px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #fef6ef, #fff);
+  border: 1px solid #f0e1d5;
+}
+
+.stat_box strong {
+  display: block;
+  font-size: 1.35rem;
+  color: var(--accent);
+}
+
+.camp_card {
+  min-height: 190px;
+}
+
+@media (max-width: 576px) {
+  .navbar-brand {
+    gap: 8px;
+  }
+
+  .navbar-brand .brand-mark {
+    width: 38px;
+    height: 38px;
+  }
+
+  .hero_actions {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .hero_actions a {
+    width: 100%;
+  }
+
+  .highlight_banner {
+    padding: 24px;
+  }
+
+  .highlight_content h3 {
+    font-size: 1.5rem;
+  }
+
+  .sports_hero_content h2 {
+    font-size: 1.7rem;
+  }
+}
+
 .quote_container .play_btn {
   position: relative;
   display: -webkit-box;
@@ -538,51 +964,28 @@ a:focus {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 65px;
-  height: 65px;
-  border: none;
-  margin: 45px 0;
+  margin: 30px 0;
 }
 
-.quote_container .play_btn button {
-  background-color: transparent;
-  border: none;
-  background-color: #0e3746;
-  color: #ffffff;
-  width: 100%;
-  height: 100%;
-  border-radius: 100%;
-  position: relative;
-  z-index: 3;
-  outline: none;
-  -webkit-box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.25);
-          box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.25);
+.quote_container .play_btn a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  background-color: #ffffff;
+  color: #0e3746;
+  border-radius: 999px;
+  font-weight: 600;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.quote_container .play_btn a:hover {
+  background-color: #f4f7f8;
+  color: #0e3746;
 }
 
 .quote_container .play_btn:before, .quote_container .play_btn:after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  background-color: white;
-  opacity: 1;
-  border-radius: 100%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-
-.quote_container .play_btn:before {
-  z-index: 2;
-  -webkit-animation: before-animation 1500ms infinite;
-          animation: before-animation 1500ms infinite;
-}
-
-.quote_container .play_btn:after {
-  z-index: 1;
-  -webkit-animation: after-animation 1500ms infinite;
-          animation: after-animation 1500ms infinite;
+  display: none;
 }
 
 @-webkit-keyframes before-animation {

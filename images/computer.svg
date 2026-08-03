@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <rect width="800" height="500" rx="36" fill="#f3f8ff"/>
+  <rect x="180" y="140" width="260" height="180" rx="22" fill="#ffffff" stroke="#0f766e" stroke-width="8"/>
+  <rect x="210" y="170" width="200" height="120" rx="12" fill="#0f172a"/>
+  <path d="M240 210h140" stroke="#22d3ee" stroke-width="10" stroke-linecap="round"/>
+  <path d="M250 240h110" stroke="#38bdf8" stroke-width="10" stroke-linecap="round"/>
+  <rect x="480" y="190" width="100" height="100" rx="16" fill="#f59e0b"/>
+  <path d="M510 220l20 20 30-40" stroke="#fff" stroke-width="12" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="180" y="430" font-size="34" font-family="Segoe UI, Arial, sans-serif" fill="#0f766e">Computer Science</text>
+</svg>

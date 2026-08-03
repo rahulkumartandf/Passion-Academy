@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <rect width="800" height="500" rx="36" fill="#fffaf2"/>
+  <rect x="190" y="120" width="220" height="260" rx="24" fill="#ffffff" stroke="#4f46e5" stroke-width="8"/>
+  <path d="M230 190h140" stroke="#4f46e5" stroke-width="12" stroke-linecap="round"/>
+  <path d="M230 240h100" stroke="#4f46e5" stroke-width="12" stroke-linecap="round"/>
+  <path d="M230 290h120" stroke="#4f46e5" stroke-width="12" stroke-linecap="round"/>
+  <circle cx="560" cy="220" r="90" fill="#fed7aa"/>
+  <path d="M520 220h80" stroke="#c2410c" stroke-width="14" stroke-linecap="round"/>
+  <path d="M560 180v80" stroke="#c2410c" stroke-width="14" stroke-linecap="round"/>
+  <text x="190" y="430" font-size="34" font-family="Segoe UI, Arial, sans-serif" fill="#4f46e5">Mathematics</text>
+</svg>
