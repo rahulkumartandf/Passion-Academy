@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <rect width="800" height="500" rx="36" fill="#f1fbf4"/>
+  <path d="M200 320c44-80 122-120 198-120 60 0 130 20 176 82" stroke="#2f9e44" stroke-width="16" fill="none" stroke-linecap="round"/>
+  <path d="M250 320c26-52 70-80 120-80 42 0 82 18 112 48" stroke="#34a853" stroke-width="16" fill="none" stroke-linecap="round"/>
+  <circle cx="270" cy="180" r="50" fill="#8bc34a"/>
+  <circle cx="520" cy="210" r="38" fill="#66bb6a"/>
+  <text x="180" y="430" font-size="34" font-family="Segoe UI, Arial, sans-serif" fill="#2f9e44">Environmental Studies</text>
+</svg>

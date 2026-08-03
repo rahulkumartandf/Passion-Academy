@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <rect width="800" height="500" rx="36" fill="#fff9f2"/>
+  <circle cx="250" cy="220" r="90" fill="#f59e0b"/>
+  <path d="M180 300c40-50 100-70 170-70" stroke="#ef4444" stroke-width="16" fill="none" stroke-linecap="round"/>
+  <path d="M470 170c30 0 54 24 54 54s-24 54-54 54-54-24-54-54 24-54 54-54z" fill="#f472b6"/>
+  <path d="M490 300c40 0 70 26 90 60" stroke="#8b5cf6" stroke-width="14" fill="none" stroke-linecap="round"/>
+  <text x="180" y="430" font-size="34" font-family="Segoe UI, Arial, sans-serif" fill="#b45309">Art &amp; Creativity</text>
+</svg>
